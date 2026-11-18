@@ -6,7 +6,7 @@ Projeto desenvolvido para a **Avaliação Somativa** da Unidade Curricular de **
 
 ## 🔗 Links Oficiais da Entrega
 - 🌐 **Site Publicado (GitHub Pages):** [https://leonardodamascenodev.github.io/technova-solutions/](https://leonardodamascenodev.github.io/technova-solutions/)
-- 📐 **Wireframe do Projeto:** [Visualizar Wireframe](img/wireframe.png)
+- 📐 **Wireframe do Projeto:** [Visualizar Wireframe](wireframe.png)
 
 ---
 
