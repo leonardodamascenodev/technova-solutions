@@ -6,31 +6,60 @@
     font-family: "Inter", sans-serif;
 }
 
+/* Cabeçalho */
 header {
-    background-color: white;
-    border: 1px solid black;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #D1D5DB;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-}
-
-header ul {
-    list-style: none;
-    display: flex;
-    gap: 10%;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: #4B5563;
+    justify-content: space-between;
+    padding: 14px 5%;
+    gap: 16px;
 }
 
 .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 10px;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #374151;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #4B5563;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+header ul li a:hover {
+    color: #111827;
+}
+
+/* Responsividade do Header para Celular */
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        padding: 16px 12px;
+    }
+
+    header ul {
+        gap: 16px;
+    }
 }
 
 body {
@@ -124,15 +153,15 @@ body {
 }
 
 /* Lógica de troca de slide sem JavaScript */
-#slide1:checked ~ .carrossel-slides {
+#slide1:checked~.carrossel-slides {
     transform: translateX(0%);
 }
 
-#slide2:checked ~ .carrossel-slides {
+#slide2:checked~.carrossel-slides {
     transform: translateX(-33.3333%);
 }
 
-#slide3:checked ~ .carrossel-slides {
+#slide3:checked~.carrossel-slides {
     transform: translateX(-66.6666%);
 }
 
@@ -162,26 +191,49 @@ body {
 }
 
 /* Destaca a bolinha do slide ativo */
-#slide1:checked ~ .navegacao-dots label[for="slide1"],
-#slide2:checked ~ .navegacao-dots label[for="slide2"],
-#slide3:checked ~ .navegacao-dots label[for="slide3"] {
+#slide1:checked~.navegacao-dots label[for="slide1"],
+#slide2:checked~.navegacao-dots label[for="slide2"],
+#slide3:checked~.navegacao-dots label[for="slide3"] {
     background-color: #374151;
     border-color: #FFFFFF;
 }
 
-/* Responsividade para celulares */
+/* Ajuste para celular */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
         text-align: center;
-        margin: 30px auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 30px 0;
+        padding: 0 20px;
+        gap: 30px;
+        overflow-x: hidden;
+    }
+
+    .text-inicio {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .text-inicio h2 {
+        font-size: 1.55rem;
+        line-height: 1.25;
+        overflow-wrap: break-word;
+    }
+
+    .text-inicio p {
+        font-size: 0.95rem;
     }
 
     .carrossel-container {
         width: 100%;
-        height: 260px;
+        max-width: 100%;
+        height: 240px;
+        flex: none; /* Impede que o flex distorça a altura/largura no modo coluna */
     }
 }
+
 
 /* Seção Sobre Nós */
 .sobre-section {
@@ -226,7 +278,7 @@ body {
 }
 
 /* Subtítulo Nossa Equipe */
-.equipe-container > h3 {
+.equipe-container>h3 {
     font-size: 1.35rem;
     font-weight: 700;
     color: #374151;
@@ -253,7 +305,8 @@ body {
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: top center; /* Garante que o rosto não seja cortado */
+    object-position: top center;
+    /* Garante que o rosto não seja cortado */
     border: 2px solid #D1D5DB;
     background-color: #E5E7EB;
     margin-bottom: 18px;
@@ -350,7 +403,8 @@ body {
 /* Tabela Comparativa de Planos */
 .tabela-wrapper {
     width: 100%;
-    overflow-x: auto; /* Permite rolagem horizontal no celular sem quebrar o site */
+    overflow-x: auto;
+    /* Permite rolagem horizontal no celular sem quebrar o site */
 }
 
 .tabela-planos {
@@ -789,4 +843,3 @@ body {
         width: 100%;
     }
 }
-
