@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descrição Institucional da TechNova Solutions para SEO">
+    <link rel="stylesheet" href="css/style.css">
     <title>Technova Solutions</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
 </head>
 
 <body>
     <!-- Cabeçalho -->
     <header id="topo">
-        <h1>TechNova Solutions</h1>
+        <div class="logo">
+            <img src="img/logo.svg" width="50" alt="Logo da TechNova Solutions">
+            <h1>TechNova Solutions</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
@@ -23,220 +30,319 @@
     </header>
     <!-- Hero Section -->
     <section id="inicio" class="hero">
-        <h2>Computação em Nuvem (Cloud), Inteligência Artificial e Cibersegurança.</h2>
-        <p>Todas as tecnologias na palma da sua mão, atráves da TechNova Solutions.</p>
-        <button>Entrar em contato</button>
-        <div>
-            <figure>
-                <img src="img/hero.webp" alt="Imagem Hero sobre Computação na nuvem">
-                <figcaption></figcaption>
-            </figure>
-            <figure>
-                <img src="img/hero-ia.jpg" alt="Imagem hero sobre Inteligência Artificial">
-                <figcaption></figcaption>
-            </figure>
-            <figure>
-                <img src="img/hero-ciber.jpg" alt="Imagem hero sobre Cibersegurança">
-                <figcaption></figcaption>
-            </figure>
+        <div class="text-inicio">
+            <h2>Computação em Nuvem (Cloud), Inteligência Artificial e Cibersegurança.</h2>
+            <p>Todas as tecnologias na palma da sua mão, atráves da TechNova Solutions.</p>
+            <button>Entrar em contato</button>
+        </div>
+        <div class="carrossel-container">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <div class="carrossel-slides">
+                <figure>
+                    <img src="img/hero.webp" alt="Imagem Hero sobre Computação na nuvem">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="img/hero-ia.jpg" alt="Imagem hero sobre Inteligência Artificial">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="img/hero-ciber.jpg" alt="Imagem hero sobre Cibersegurança">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div class="navegacao-dots">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
         </div>
     </section>
     <!-- Sobre nós -->
-    <section id="sobre">
-        <h2>Sobre</h2>
-        <div>
-            <h2>Nossa Missão</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae tempore quod molestias, placeat
-                adipisci!</p>
+    <section id="sobre" class="sobre-section">
+        <div class="sobre-cabecalho">
+            <h2>Sobre nós</h2>
+            <div class="sobre-valores">
+                <div class="valor-item">
+                    <h3>Nossa Missão</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae tempore quod molestias,
+                        placeat adipisci!</p>
+                </div>
+                <div class="valor-item">
+                    <h3>Visão da nossa empresa</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, odit. Asperiores, nesciunt?
+                        Fugiat, esse cumque?</p>
+                </div>
+                <div class="valor-item">
+                    <h3>Valores</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa sapiente et, exercitationem
+                        quibusdam ea!</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>Visão da nossa empresa</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, odit. Asperiores, nesciunt? Fugiat, esse
-                cumque?</p>
+
+        <div class="equipe-container">
+            <h3>Nossa equipe</h3>
+
+            <!-- Grade de especialistas -->
+            <div class="equipe-grid">
+                <article class="membro-card">
+                    <img src="img/funcionario-lucas.jpg" alt="Imagem do Funcionário Lucas">
+                    <h4>Lucas Clark</h4>
+                    <ul>
+                        <li>Engenheiro de Software</li>
+                    </ul>
+                    <p>Trabalho na TechNova Solutions há 3 anos, e confio na proteção dos nossos serviços.</p>
+                </article>
+
+                <article class="membro-card">
+                    <img src="img/funcionario-douglas.jpg" alt="Imagem do Funcionário Douglas">
+                    <h4>Douglas Simpsons</h4>
+                    <ul>
+                        <li>Arquiteto de Banco de dados</li>
+                    </ul>
+                    <p>Sou arquiteto de Banco de dados especializado com formação na área pela faculdade da Unoeste.</p>
+                </article>
+
+                <article class="membro-card">
+                    <img src="img/funcionario-mariano.jpg" alt="Imagem do Funcionário Mariano">
+                    <h4>Mariano Esponja</h4>
+                    <ul>
+                        <li>Engenheiro de Prompt para IAs</li>
+                    </ul>
+                    <p>Faço prompts para sua IA entender seu problema completamente.</p>
+                </article>
+            </div>
         </div>
-        <div>
-            <h2>Valores</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa sapiente et, exercitationem quibusdam
-                ea!</p>
-        </div>
-        <!-- Grade de especialistas -->
-        <article>
-            <img src="img/funcionario-lucas.jpg" alt="Imagem do Funcionário Lucas">
-            <h3>Lucas Clark</h3>
-            <ul>
-                <li>Engenheiro de Software</li>
-            </ul>
-            <p>Trabalho na TechNova Solutions á 3 anos, e confio na proteção dos nossos serviços.</p>
-        </article>
-        <article>
-            <img src="img/funcionario-douglas.jpg" alt="Imagem do Funcionário Douglas">
-            <h3>Douglas Simpsons</h3>
-            <ul>
-                <li>Arquiteto de Banco de dados</li>
-            </ul>
-            <p>Sou arquiteto de Banco de dados especializado com formação na área pela faculdade da Unoeste.</p>
-        </article>
-        <article>
-            <img src="img/funcionario-mariano.jpg" alt="Imagem do Funcionário Mariano">
-            <h3>Mariano Esponja</h3>
-            <ul>
-                <li>Engenheiro de Prompt para IAs</li>
-            </ul>
-            <p>Faço prompts para sua IA entender seu problema completamente.</p>
-        </article>
     </section>
     <!-- Serviços -->
-    <section id="servicos">
-        <h2>Serviços</h2>
-        <article>
-            <h3>Computação em Nuvem</h3>
-        </article>
-        <article>
-            <h3>Inteligência Artificial</h3>
-        </article>
-        <article>
-            <h3>Cibersegurança</h3>
-        </article>
-        <table>
-            <caption>Tabela Comparativa de Planos</caption>
-            <thead>
-                <tr>
-                    <th>Área</th>
-                    <th>Recurso</th>
-                    <th>Plano Eco</th>
-                    <th>Plano Plus</th>
-                    <th>Plano Ultra</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Nuvem</td>
-                    <td>Armazenamento</td>
-                    <td>100 GB</td>
-                    <td>1 TB</td>
-                    <td>Ilimitado</td>
-                </tr>
-                <tr>
-                    <td>Backup</td>
-                    <td>Servidores</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>Sob demanda</td>
-                </tr>
-                <tr>
-                    <td>IA</td>
-                    <td>Chatbot</td>
-                    <td>Não</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                </tr>
-                <tr>
-                    <td>Segurança</td>
-                    <td>Monitoramento</td>
-                    <td>Horário comercial</td>
-                    <td colspan="2">24 horas</td>
-                </tr>
-            </tbody>
-        </table>
+    <section id="servicos" class="servicos-section">
+        <div class="servicos-container">
+            <h2>Serviços e planos</h2>
+            <div class="servicos-grid">
+                <article class="servico-card">
+                    <div class="icone-circulo"></div>
+                    <h3>Computação em Nuvem</h3>
+                    <p>Infraestrutura escalável e de alta disponibilidade para hospedar seus sistemas com segurança.</p>
+                </article>
+
+                <article class="servico-card">
+                    <div class="icone-circulo"></div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>Automação inteligente, chatbots personalizados e análise preditiva para acelerar seus resultados.
+                    </p>
+                </article>
+
+                <article class="servico-card">
+                    <div class="icone-circulo"></div>
+                    <h3>Cibersegurança</h3>
+                    <p>Proteção contínua contra ameaças digitais, backups automatizados e monitoramento 24/7.</p>
+                </article>
+            </div>
+
+            <!-- Tabela Comparativa -->
+            <div class="tabela-wrapper">
+                <table class="tabela-planos">
+                    <caption>Planos mensais</caption>
+                    <thead>
+                        <tr>
+                            <th>Área</th>
+                            <th>Recurso</th>
+                            <th>Plano Eco</th>
+                            <th>Plano Plus</th>
+                            <th>Plano Ultra</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Nuvem</td>
+                            <td>Armazenamento</td>
+                            <td>100 GB</td>
+                            <td>1 TB</td>
+                            <td>Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <td>Servidores</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>Sob demanda</td>
+                        </tr>
+                        <tr>
+                            <td>IA</td>
+                            <td>Chatbot</td>
+                            <td>Não</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Segurança</td>
+                            <td>Monitoramento</td>
+                            <td>Horário comercial</td>
+                            <td colspan="2">24 horas</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Preço</td>
+                            <td>R$ 299</td>
+                            <td>R$ 899</td>
+                            <td>Sob consulta</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
     </section>
     <!-- Blog & Central de Notícias -->
-    <section id="blog">
-        <h2>Blog</h2>
-        <div class="pesquisar">
-            <input type="search" placeholder="Pesquisar artigos...">
-            <ul>
-                <li>Computação em Nuvem</li>
-                <li>Inteligência Artificial</li>
-                <li>Cibersegurança</li>
-            </ul>
-        </div>
-        <article>
-            <img src="img/blog-cloud.webp" alt="Capa do artigo sobre Computação em nuvem no dia a dia">
-            <span>Computação em Nuvem no dia a dia</span>
-            <time datetime="2026-07-29">29 de Julho de 2026</time>
-            <h3>Mariano Esponja</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, tempore.</p>
-            <a href="#blog"><em>Ler artigo completo</em></a>
-        </article>
-        <article>
-            <img src="img/blog-ia.webp" alt="Capa do artigo sobre Inteligência Artificial na vida">
-            <span>Inteligência Artificial na vida</span>
-            <time datetime="2026-11-25">25 de Novembro de 2026</time>
-            <h3>Claudio Vespa</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, tempore.</p>
-            <a href="#blog"><em>Ler artigo completo</em></a>
-        </article>
-        <article>
-            <img src="img/blog-seguranca.webp" alt="Capa do artigo sobre o poder da Cibersegurança">
-            <span>O poder da Cibersegurança</span>
-            <time datetime="2026-02-20">20 de Fevereiro de 2026</time>
-            <h3>Vitor Salgado</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, tempore.</p>
-            <a href="#blog"><em>Ler artigo completo</em></a>
-        </article>
-    </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <form action="#">
-            <fieldset>
-                <legend>Contato</legend>
-                <label for="nome">Nome Completo</label>
-                <input type="text" id="nome" required placeholder="Digite seu nome">
-                <label for="email">E-mail Institucional</label>
-                <input type="text" id="email" required placeholder="Digite seu email">
-                <label for="telefone">Telefone / Whatsapp</label>
-                <input type="tel" id="telefone" required placeholder="Digite seu telefone">
-                <label for="assunto">Assunto do Atendimento:</label>
-                <select id="assunto" name="assunto" required>
-                    <option value="" disabled selected>Selecione a área de interesse...</option>
-                    <option value="nuvem">Computação na Nuvem e Migração</option>
-                    <option value="ia">Soluções de Inteligência Artificial (IA)</option>
-                    <option value="ciberseguranca">Cibersegurança e Proteção de Dados</option>
-                    <option value="comercial">Orçamento ou Consultoria de Projetos</option>
-                    <option value="suporte">Suporte Técnico Especializado</option>
-                </select>
-                <label for="mensagem">Mensagem Detalhada</label>
-                <textarea name="mensagem" id="mensagem" rows="5" required placeholder="Digite sua mensagem"></textarea>
-                <label for="aceite">Aceite de Privacidade</label>
-                <input type="checkbox" id="aceite" required>
-                <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
-        <aside class="contato-aside" aria-label="Informações institucionais e localização">
-            <h2>Onde Estamos</h2>
+    <section id="blog" class="blog-section">
+        <div class="blog-container">
+            <h2>Blog</h2>
 
-            <address>
-                <strong>Technova Solutions Tecnologia Ltda.</strong><br>
-                Av. Paulista, 1000 – Conj. 1204, Bela Vista<br>
-                São Paulo – SP, CEP 01310-100<br><br>
+            <div class="blog-layout">
+                <!-- Coluna da Esquerda: 3 Cards Lado a Lado -->
+                <div class="blog-posts">
+                    <article class="blog-card">
+                        <img src="img/blog-cloud.webp" alt="Capa do artigo sobre Computação em nuvem no dia a dia">
+                        <div class="blog-card-conteudo">
+                            <time datetime="2026-07-29">29 de Julho de 2026</time>
+                            <h3>Computação em Nuvem no dia a dia</h3>
+                            <span class="autor">Por Mariano Esponja</span>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, tempore.</p>
+                            <a href="#blog">Ler artigo completo</a>
+                        </div>
+                    </article>
 
-                <strong>E-mail:</strong> <a
-                    href="mailto:contato@technovasolutions.com.br">contato@technovasolutions.com.br</a><br>
-                <strong>Telefone:</strong> <a href="tel:+551130000000">(11) 3000-0000</a><br>
-                <strong>Horário:</strong> Seg. a Sex., das 08h às 18h
-            </address>
+                    <article class="blog-card">
+                        <img src="img/blog-ia.webp" alt="Capa do artigo sobre Inteligência Artificial na vida">
+                        <div class="blog-card-conteudo">
+                            <time datetime="2026-11-25">25 de Novembro de 2026</time>
+                            <h3>Inteligência Artificial na vida</h3>
+                            <span class="autor">Por Claudio Vespa</span>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, tempore.</p>
+                            <a href="#blog">Ler artigo completo</a>
+                        </div>
+                    </article>
 
-            <div class="mapa-wrapper">
-                <iframe title="Mapa de localização da Technova Solutions" src="https://openstreetmap.org" height="220"
-                    style="width: 100%; border: 0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <article class="blog-card">
+                        <img src="img/blog-seguranca.webp" alt="Capa do artigo sobre o poder da Cibersegurança">
+                        <div class="blog-card-conteudo">
+                            <time datetime="2026-02-20">20 de Fevereiro de 2026</time>
+                            <h3>O poder da Cibersegurança</h3>
+                            <span class="autor">Por Vitor Salgado</span>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, tempore.</p>
+                            <a href="#blog">Ler artigo completo</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Coluna da Direita: Barra Lateral com Borda Esquerda -->
+                <aside class="blog-sidebar">
+                    <div class="pesquisar">
+                        <input type="search" placeholder="Pesquisar artigos...">
+                    </div>
+
+                    <div class="categorias">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <li><a href="#blog">Computação em Nuvem</a></li>
+                            <li><a href="#blog">Inteligência Artificial</a></li>
+                            <li><a href="#blog">Cibersegurança</a></li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
-        </aside>
-    </section>
-    <footer>
-        <p>Direitos Autorais reservados</p>
-        <ul>
-            <li><a href="">Link útil</a></li>
-            <li><a href="">Link útil</a></li>
-            <li><a href="">Link útil</a></li>
-        </ul>
-        <div>
-            <ul>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Linkedin</a></li>
-            </ul>
         </div>
-        <a href="#topo">Voltar ao Topo</a>
+    </section>
+    <!-- Contato -->
+    <section id="contato" class="contato-section">
+        <div class="contato-container">
+            <div class="contato-layout">
+                <!-- Coluna da Esquerda: Título + Formulário -->
+                <div class="contato-form-coluna">
+                    <h2>Contato</h2>
+                    <form action="#">
+                        <fieldset>
+                            <legend>Envie sua mensagem</legend>
+
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+                            <label for="email">E-mail Institucional</label>
+                            <input type="email" id="email" name="email" required placeholder="Digite seu email">
+
+                            <label for="telefone">Telefone / Whatsapp</label>
+                            <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+
+                            <label for="assunto">Assunto do Atendimento</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="" disabled selected>Selecione a área de interesse...</option>
+                                <option value="nuvem">Computação na Nuvem e Migração</option>
+                                <option value="ia">Soluções de Inteligência Artificial (IA)</option>
+                                <option value="ciberseguranca">Cibersegurança e Proteção de Dados</option>
+                                <option value="comercial">Orçamento ou Consultoria de Projetos</option>
+                                <option value="suporte">Suporte Técnico Especializado</option>
+                            </select>
+
+                            <label for="mensagem">Mensagem Detalhada</label>
+                            <textarea name="mensagem" id="mensagem" rows="5" required
+                                placeholder="Digite sua mensagem"></textarea>
+
+                            <div class="checkbox-grupo">
+                                <input type="checkbox" id="aceite" name="aceite" required>
+                                <label for="aceite">Aceite de Privacidade</label>
+                            </div>
+
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- Coluna da Direita: Onde Estamos + Mapa -->
+                <aside class="contato-aside" aria-label="Informações institucionais e localização">
+                    <h2>Onde Estamos</h2>
+
+                    <address>
+                        <strong>Technova Solutions Tecnologia Ltda.</strong><br>
+                        <strong>Endereço:</strong> Av. Paulista, 1000 – Conj. 1204, Bela Vista<br>
+                        <strong>CEP:</strong> 01310-100 – São Paulo – SP<br>
+                        <strong>Telefone:</strong> <a href="tel:+551130000000">(11) 3000-0000</a><br>
+                        <strong>E-mail:</strong> <a
+                            href="mailto:contato@technovasolutions.com.br">contato@technovasolutions.com.br</a><br>
+                        <strong>Horário de atendimento:</strong> Seg. a Sex., das 08h às 18h
+                    </address>
+
+                    <div class="mapa-wrapper">
+                        <iframe title="Mapa de localização da Technova Solutions" src="https://openstreetmap.org"
+                            height="220" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer-principal">
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+
+                <ul class="redes-sociais">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <p class="copyright">&copy; 2026 TechNova Solutions – Todos os direitos autorais reservados</p>
+            <a href="#topo" class="voltar-topo">Voltar ao Topo ↑</a>
+        </div>
     </footer>
 </body>
 
