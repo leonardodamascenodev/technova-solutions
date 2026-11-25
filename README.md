@@ -4,18 +4,29 @@ Projeto desenvolvido para a **Avaliação Somativa** da Unidade Curricular de **
 
 ---
 
-## 🔗 Links Oficiais da Entrega
+## 🔗 Link Oficial da Entrega
 - 🌐 **Site Publicado (GitHub Pages):** [https://leonardodamascenodev.github.io/technova-solutions/](https://leonardodamascenodev.github.io/technova-solutions/)
-- 📐 **Wireframe do Projeto:** [Visualizar Wireframe](wireframe.png)
 
 ---
 
-## ✅ Auditoria e Validação Oficial W3C (Clique para Verificar ao Vivo)
+## 📐 Wireframe do Projeto
 
-Clique nos botões abaixo para executar a validação em tempo real diretamente no servidor do consórcio W3C:
+![Wireframe do Portal TechNova Solutions](wireframe.png)
+
+---
+
+## ✅ Auditoria e Validação Oficial W3C
+
+Clique nos links abaixo para executar a validação em tempo real diretamente no servidor do consórcio W3C, ou confira os comprovantes capturados abaixo:
 
 - 🔍 **[Validar HTML5 no W3C (Ao Vivo)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fleonardodamascenodev.github.io%2Ftechnova-solutions%2F)**
 - 🎨 **[Validar CSS3 no W3C Jigsaw (Ao Vivo)](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fleonardodamascenodev.github.io%2Ftechnova-solutions%2F&profile=css3svg)**
+
+### Validação HTML5
+![Resultado da Validação HTML5 no W3C](w3schools-html.png)
+
+### Validação CSS3
+![Resultado da Validação CSS3 no W3C](w3schools-css.png)
 
 ---
 
