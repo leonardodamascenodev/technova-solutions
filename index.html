@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descrição Institucional da TechNova Solutions para SEO">
     <title>Technova Solutions</title>
 </head>
+
 <body>
     <!-- Cabeçalho -->
-    <header>
+    <header id="topo">
         <h1>TechNova Solutions</h1>
         <nav>
             <ul>
@@ -20,11 +22,11 @@
         </nav>
     </header>
     <!-- Hero Section -->
-     <section id="inicio" class="hero">
-         <h1>Computação em Nuvem (Cloud), Inteligência Artificial e Cibersegurança.</h1>
-         <p>Todas as tecnologias na palma da sua mão, atráves da TechNova Solutions.</p>
-         <button>Entrar em contato</button>
-         <div>
+    <section id="inicio" class="hero">
+        <h1>Computação em Nuvem (Cloud), Inteligência Artificial e Cibersegurança.</h1>
+        <p>Todas as tecnologias na palma da sua mão, atráves da TechNova Solutions.</p>
+        <button>Entrar em contato</button>
+        <div>
             <figure>
                 <img src="" alt="">
                 <figcaption></figcaption>
@@ -37,47 +39,50 @@
                 <img src="" alt="">
                 <figcaption></figcaption>
             </figure>
-         </div>
-     </section>
-     <!-- Sobre nós -->
+        </div>
+    </section>
+    <!-- Sobre nós -->
     <section id="sobre">
         <div>
             <h2>Nossa Missão</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae tempore quod molestias, placeat adipisci!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae tempore quod molestias, placeat
+                adipisci!</p>
         </div>
         <div>
             <h2>Visão da nossa empresa</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, odit. Asperiores, nesciunt? Fugiat, esse cumque?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, odit. Asperiores, nesciunt? Fugiat, esse
+                cumque?</p>
         </div>
         <div>
             <h2>Valores</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa sapiente et, exercitationem quibusdam ea!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa sapiente et, exercitationem quibusdam
+                ea!</p>
         </div>
         <!-- Grade de especialistas -->
-         <article>
+        <article>
             <img src="" alt="Imagem do Funcionário Lucas">
             <h4>Lucas Clark</h4>
             <ul>
                 <li>Engenheiro de Software</li>
             </ul>
             <p>Trabalho na TechNova Solutions á 3 anos, e confio na proteção dos nossos serviços.</p>
-         </article>
-         <article>
+        </article>
+        <article>
             <img src="" alt="Imagem do Funcionário Douglas">
             <h4>Douglas Simpsons</h4>
             <ul>
                 <li>Arquiteto de Banco de dados</li>
             </ul>
             <p>Sou arquiteto de Banco de dados especializado com formação na área pela faculdade da Unoeste.</p>
-         </article>
-         <article>
+        </article>
+        <article>
             <img src="" alt="Imagem do Funcionário Mariano">
             <h4>Mariano Esponja</h4>
             <ul>
                 <li>Engenheiro de Prompt para IAs</li>
             </ul>
             <p>Faço prompts para sua IA entender seu problema completamente.</p>
-         </article>
+        </article>
     </section>
     <!-- Serviços -->
     <section id="servicos">
@@ -132,5 +137,104 @@
             </tbody>
         </table>
     </section>
+    <!-- Blog & Central de Notícias -->
+    <section id="blog">
+        <div class="pesquisar">
+            <input type="search" placeholder="Pesquisar artigos...">
+            <ul>
+                <li>Computação em Nuvem</li>
+                <li>Inteligência Artificial</li>
+                <li>Cibersegurança</li>
+            </ul>
+        </div>
+        <article>
+            <img src="imagem-capa-nuvem" alt="Capa do artigo sobre Computação em nuvem no dia a dia">
+            <span>Computação em Nuvem no dia a dia</span>
+            <time datetime=""></time>
+            <h3>Mariano Esponja</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, tempore.</p>
+            <a href="#blog"><em>Ler artigo completo</em></a>
+        </article>
+        <article>
+            <img src="imagem-capa-ai" alt="Capa do artigo sobre Inteligência Artificial na vida">
+            <span>Inteligência Artificial na vida</span>
+            <time datetime=""></time>
+            <h3>Claudio Vespa</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, tempore.</p>
+            <a href="#blog"><em>Ler artigo completo</em></a>
+        </article>
+        <article>
+            <img src="imagem-capa-ciber" alt="Capa do artigo sobre o poder da Cibersegurança">
+            <span>O poder da Cibersegurança</span>
+            <time datetime=""></time>
+            <h3>Vitor Salgado</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, tempore.</p>
+            <a href="#blog"><em>Ler artigo completo</em></a>
+        </article>
+    </section>
+    <section id="contato">
+        <form action="">
+            <fieldset>
+                <legend>Contato</legend>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" required placeholder="Digite seu nome">
+                <label for="email">E-mail Institucional</label>
+                <input type="text" id="email" required placeholder="Digite seu email">
+                <label for="telefone">Telefone / Whatsapp</label>
+                <input type="tel" id="telefone" required placeholder="Digite seu telefone">
+                <label for="assunto">Assunto do Atendimento:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="" disabled selected>Selecione a área de interesse...</option>
+                    <option value="nuvem">Computação na Nuvem e Migração</option>
+                    <option value="ia">Soluções de Inteligência Artificial (IA)</option>
+                    <option value="ciberseguranca">Cibersegurança e Proteção de Dados</option>
+                    <option value="comercial">Orçamento ou Consultoria de Projetos</option>
+                    <option value="suporte">Suporte Técnico Especializado</option>
+                </select>
+                <label for="mensagem">Mensagem Detalhada</label>
+                <textarea name="" id="mensagem" rows="5" required placeholder="Digite sua mensagem"></textarea>
+                <label for="aceite">Aceite de Privacidade</label>
+                <input type="checkbox" id="aceite" required>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+        <aside class="contato-aside" aria-label="Informações institucionais e localização">
+            <h2>Onde Estamos</h2>
+
+            <address>
+                <strong>Technova Solutions Tecnologia Ltda.</strong><br>
+                Av. Paulista, 1000 – Conj. 1204, Bela Vista<br>
+                São Paulo – SP, CEP 01310-100<br><br>
+
+                <strong>E-mail:</strong> <a
+                    href="mailto:contato@technovasolutions.com.br">contato@technovasolutions.com.br</a><br>
+                <strong>Telefone:</strong> <a href="tel:+551130000000">(11) 3000-0000</a><br>
+                <strong>Horário:</strong> Seg. a Sex., das 08h às 18h
+            </address>
+
+            <div class="mapa-wrapper">
+                <iframe title="Mapa de localização da Technova Solutions" src="https://openstreetmap.org" width="100%"
+                    height="220" style="border: 0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </aside>
+    </section>
+    <footer>
+        <p>Direitos Autorais reservados</p>
+        <ul>
+            <li><a href="">Link útil</a></li>
+            <li><a href="">Link útil</a></li>
+            <li><a href="">Link útil</a></li>
+        </ul>
+        <div>
+            <ul>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Linkedin</a></li>
+            </ul>
+        </div>
+        <a href="#topo">Voltar ao Topo</a>
+    </footer>
 </body>
+
 </html>
